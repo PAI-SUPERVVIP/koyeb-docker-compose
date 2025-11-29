@@ -3,7 +3,7 @@
 set -e
 
 # Run docker daemon
-/usr/local/bin/dockerd-entrypoint.sh --tls=false > /tmp/docker.log 2>&1 &
+/usr/local/bin/docker-entrypoint.sh --tls=false > /tmp/docker.log 2>&1 &
 
 echo "Waiting for docker daemon to start..." >&2
 
